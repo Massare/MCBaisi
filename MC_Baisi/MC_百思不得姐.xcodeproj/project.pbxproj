@@ -53,6 +53,8 @@
 		1955ED9C1D2D1528001506C5 /* MCVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1955ED9A1D2D1528001506C5 /* MCVerticalButton.m */; };
 		1955ED9F1D2D1615001506C5 /* MCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1955ED9E1D2D1615001506C5 /* MCConst.m */; };
 		1955EDA21D2D163D001506C5 /* MCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1955EDA11D2D163D001506C5 /* MCTextField.m */; };
+		195BF1871D6F3DD100962F63 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 195BF1851D6F3DD100962F63 /* 1.gif */; };
+		195BF1881D6F3DD100962F63 /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 195BF1861D6F3DD100962F63 /* 2.gif */; };
 		1963A06F1D2D538D00A0E460 /* MCRecommandCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1963A06E1D2D538D00A0E460 /* MCRecommandCategory.m */; };
 		1963A0721D2D53D200A0E460 /* MCRecommandUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1963A0711D2D53D200A0E460 /* MCRecommandUser.m */; };
 		19BACFBB1D3931D900D4551E /* MCAVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BACFBA1D3931D900D4551E /* MCAVPlayerView.m */; };
@@ -172,6 +174,8 @@
 		1955ED9E1D2D1615001506C5 /* MCConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCConst.m; sourceTree = "<group>"; };
 		1955EDA01D2D163D001506C5 /* MCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTextField.h; sourceTree = "<group>"; };
 		1955EDA11D2D163D001506C5 /* MCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTextField.m; sourceTree = "<group>"; };
+		195BF1851D6F3DD100962F63 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		195BF1861D6F3DD100962F63 /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
 		1963A06D1D2D538D00A0E460 /* MCRecommandCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRecommandCategory.h; sourceTree = "<group>"; };
 		1963A06E1D2D538D00A0E460 /* MCRecommandCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCRecommandCategory.m; sourceTree = "<group>"; };
 		1963A0701D2D53D200A0E460 /* MCRecommandUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRecommandUser.h; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 			children = (
 				1955ED161D2BEF8C001506C5 /* MC_百思不得姐 */,
 				1955ED151D2BEF8C001506C5 /* Products */,
+				195BF1841D6F3DD100962F63 /* images */,
 				470C5107EAE2E1D4C1C4197D /* Pods */,
 				17B082FF8A38FE1A24CA0D3E /* Frameworks */,
 			);
@@ -644,6 +649,15 @@
 			path = Inheritance;
 			sourceTree = "<group>";
 		};
+		195BF1841D6F3DD100962F63 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				195BF1851D6F3DD100962F63 /* 1.gif */,
+				195BF1861D6F3DD100962F63 /* 2.gif */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		19D782A41D2DCA0600C2BD52 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -747,8 +761,10 @@
 				19E397961D31E1F300513BD7 /* MCTopicPictureView.xib in Resources */,
 				1955ED8D1D2CD594001506C5 /* MCRecommendViewController.xib in Resources */,
 				1955ED881D2CCEF8001506C5 /* MCConcernViewController.xib in Resources */,
+				195BF1871D6F3DD100962F63 /* 1.gif in Resources */,
 				19E397B91D32805B00513BD7 /* MCTopicVideoViewController.xib in Resources */,
 				1955ED921D2CD5F3001506C5 /* MCLoginRegisterViewController.xib in Resources */,
+				195BF1881D6F3DD100962F63 /* 2.gif in Resources */,
 				19E397A01D31E26F00513BD7 /* MCTopicVoiceView.xib in Resources */,
 				19444DE21D35AB8A00262DC2 /* MCPublishVC.xib in Resources */,
 				19339A271D34956100F198FD /* MCCommentVC.xib in Resources */,
