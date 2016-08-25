@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCPublishVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="h4s-Cs-bHL" userLabel="背景">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="h4s-Cs-bHL" secondAttribute="height" multiplier="1:1" id="Bt2-uE-G9G"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Bt2-uE-G9G"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sy8-Xj-Znd" userLabel="取消">
+                    <rect key="frame" x="69.5" y="506" width="462" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Sy8-Xj-Znd" secondAttribute="height" multiplier="289:40" id="6Ol-bg-u92"/>
+                        <constraint firstAttribute="width" secondItem="Sy8-Xj-Znd" secondAttribute="height" multiplier="289:40" id="86b-NK-8Fp"/>
+                        <constraint firstAttribute="width" constant="289" id="L5G-Uo-n8K"/>
+                        <constraint firstAttribute="height" constant="40" id="O0w-wa-VXx"/>
+                        <constraint firstAttribute="width" secondItem="Sy8-Xj-Znd" secondAttribute="height" multiplier="289:40" id="Oxd-vh-a7F"/>
+                        <constraint firstAttribute="height" constant="40" id="P3o-VX-OKS"/>
+                        <constraint firstAttribute="width" secondItem="Sy8-Xj-Znd" secondAttribute="height" multiplier="289:40" id="S4g-cN-1JT"/>
+                        <constraint firstAttribute="width" constant="280" id="YTB-cf-r3q"/>
+                        <constraint firstAttribute="width" constant="289" id="eIj-ZH-Nhz"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="vtN-W6-bn2"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="shareButtonCancel"/>
+                    <state key="highlighted" backgroundImage="shareButtonCancelClick"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6Ol-bg-u92"/>
+                            <exclude reference="86b-NK-8Fp"/>
+                            <exclude reference="L5G-Uo-n8K"/>
+                            <exclude reference="O0w-wa-VXx"/>
+                            <exclude reference="P3o-VX-OKS"/>
+                            <exclude reference="S4g-cN-1JT"/>
+                            <exclude reference="YTB-cf-r3q"/>
+                            <exclude reference="eIj-ZH-Nhz"/>
+                            <exclude reference="vtN-W6-bn2"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="cancelButtonClick:" destination="-1" eventType="touchUpInside" id="KuW-ek-j96"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="h4s-Cs-bHL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AlL-Su-RHB"/>
+                <constraint firstAttribute="bottom" secondItem="h4s-Cs-bHL" secondAttribute="bottom" id="ArK-8C-rup"/>
+                <constraint firstItem="Sy8-Xj-Znd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CcP-Zg-Hup"/>
+                <constraint firstAttribute="trailing" secondItem="Sy8-Xj-Znd" secondAttribute="trailing" constant="155" id="Vug-iO-ql7"/>
+                <constraint firstItem="h4s-Cs-bHL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZF2-HK-bOE"/>
+                <constraint firstItem="Sy8-Xj-Znd" firstAttribute="width" secondItem="h4s-Cs-bHL" secondAttribute="width" multiplier="289:375" id="dR6-LA-XhA"/>
+                <constraint firstItem="Sy8-Xj-Znd" firstAttribute="width" secondItem="h4s-Cs-bHL" secondAttribute="width" multiplier="1:2" id="eg6-Ex-dSi"/>
+                <constraint firstAttribute="bottom" secondItem="Sy8-Xj-Znd" secondAttribute="bottom" constant="30" id="jSm-6p-G8k"/>
+                <constraint firstItem="Sy8-Xj-Znd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="156" id="rXp-JK-l6R"/>
+                <constraint firstAttribute="bottom" secondItem="Sy8-Xj-Znd" secondAttribute="bottom" constant="30" id="u7Y-m6-0Ft"/>
+                <constraint firstAttribute="trailing" secondItem="h4s-Cs-bHL" secondAttribute="trailing" id="ubO-Kz-otj"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Vug-iO-ql7"/>
+                    <exclude reference="eg6-Ex-dSi"/>
+                    <exclude reference="rXp-JK-l6R"/>
+                    <exclude reference="u7Y-m6-0Ft"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="shareBottomBackground" width="320" height="343"/>
+        <image name="shareButtonCancel" width="289" height="40"/>
+        <image name="shareButtonCancelClick" width="289" height="40"/>
+    </resources>
+</document>

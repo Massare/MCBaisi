@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCShareViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VG6-B0-lCD">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="FB2-Er-wsg"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxT-CS-4GV">
+                    <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="fQs-Rt-m6b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.25107758620689657" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VG6-B0-lCD" secondAttribute="trailing" id="2YX-Rm-yfJ"/>
+                <constraint firstItem="LxT-CS-4GV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Ui-3R-N2O"/>
+                <constraint firstAttribute="bottom" secondItem="LxT-CS-4GV" secondAttribute="bottom" id="5un-wY-h6G"/>
+                <constraint firstAttribute="trailing" secondItem="LxT-CS-4GV" secondAttribute="trailing" id="727-7b-FIL"/>
+                <constraint firstItem="VG6-B0-lCD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JnR-lX-YtQ"/>
+                <constraint firstItem="VG6-B0-lCD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u5R-24-U8u"/>
+                <constraint firstItem="LxT-CS-4GV" firstAttribute="top" secondItem="VG6-B0-lCD" secondAttribute="bottom" id="um6-cX-cYu"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

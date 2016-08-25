@@ -1,0 +1,14 @@
+platform :ios, '7.0'
+
+target 'MC_百思不得姐' do
+
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'SVProgressHUD'
+pod 'pop'
+pod ‘MJExtension’
+pod "DACircularProgress"
+pod 'NJKWebViewProgress'
+
+end

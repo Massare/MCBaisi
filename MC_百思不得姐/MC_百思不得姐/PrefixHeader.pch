@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  MC_百思不得姐
+//
+//  Created by Austen on 16/7/6.
+//  Copyright © 2016年 mlc. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "MCConst.h"
+#import "UIView+MCCategory.h"
+#import "UIBarButtonItem+MCBarButtonItem.h"
+#import "UIImageView+MCCategory.h"
+#import "UIImage+MCCategory.h"
+#import "UIButton+MCCategory.h"
+#import "NSDate+MCCategory.h"
+#import "NSString+MCCategory.h"
+#import "MCVerticalButton.h"
+
+
+
+
+#ifdef DEBUG
+#define MCLog(...) NSLog(__VA_ARGS__)
+#else
+#define MCLog(...)
+#endif
+
+#define MCLogFunc MCLog(@"%s",__func__)
+
+#define MCNotificationCenter [NSNotificationCenter defaultCenter]
+
+#define MCRGBAColor(r, g, b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define MCGlobalBackgroundColor MCRGBAColor(223,223,223,1.0)
+
+
+#define MCScreenWidth [UIScreen mainScreen].bounds.size.width
+#define MCScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define MCNotificationCenter [NSNotificationCenter defaultCenter]
+
+#endif /* PrefixHeader_pch */

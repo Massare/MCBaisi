@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCTopicPictureViewController">
+            <connections>
+                <outlet property="containerScrollView" destination="Gil-AM-rcl" id="Ov1-nE-rBo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gil-AM-rcl">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4By-cy-oBZ">
+                    <rect key="frame" x="15" y="30" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="4L0-iz-l91"/>
+                        <constraint firstAttribute="width" constant="35" id="kda-vg-1x3"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="show_image_back_icon"/>
+                    <connections>
+                        <action selector="backButtonClick:" destination="-1" eventType="touchUpInside" id="dia-kv-DMX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfg-tZ-uKY">
+                    <rect key="frame" x="517" y="552" width="68" height="28"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="MNe-SE-Mv2"/>
+                        <constraint firstAttribute="height" constant="28" id="loN-3r-ofF"/>
+                        <constraint firstAttribute="width" constant="70" id="sLG-tL-d7B"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="6" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="评论" image="mainCellComment">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="MNe-SE-Mv2"/>
+                            <exclude reference="sLG-tL-d7B"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="commentButtonClick:" destination="-1" eventType="touchUpInside" id="hrb-Jl-wwv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PU-Ge-W6M">
+                    <rect key="frame" x="434" y="552" width="68" height="28"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Cwf-B0-y4s"/>
+                        <constraint firstAttribute="width" constant="80" id="Swb-xG-1Dk"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="ZnY-gx-Hay"/>
+                        <constraint firstAttribute="height" constant="28" id="aBQ-XI-94Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="6" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="转发" image="mainCellShare">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Cwf-B0-y4s"/>
+                            <exclude reference="Swb-xG-1Dk"/>
+                            <exclude reference="ZnY-gx-Hay"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="repostButtonClick:" destination="-1" eventType="touchUpInside" id="pWG-mP-Lu1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOb-gi-1Rt">
+                    <rect key="frame" x="15" y="552" width="50" height="28"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Oyj-Kg-H1b"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveButtonClick:" destination="-1" eventType="touchUpInside" id="kIr-bN-5jY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wfg-tZ-uKY" secondAttribute="bottom" constant="20" id="1fh-ow-jmr"/>
+                <constraint firstItem="mOb-gi-1Rt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="5eQ-hk-UE4"/>
+                <constraint firstItem="wfg-tZ-uKY" firstAttribute="leading" secondItem="5PU-Ge-W6M" secondAttribute="trailing" constant="15" id="88G-Wf-LZ0"/>
+                <constraint firstItem="Gil-AM-rcl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FiD-Qn-Nla"/>
+                <constraint firstItem="Gil-AM-rcl" firstAttribute="leading" secondItem="5PU-Ge-W6M" secondAttribute="trailing" constant="-15" id="Gtf-Ei-o00"/>
+                <constraint firstAttribute="trailing" secondItem="wfg-tZ-uKY" secondAttribute="trailing" constant="15" id="KOc-MA-h4Q"/>
+                <constraint firstAttribute="bottom" secondItem="Gil-AM-rcl" secondAttribute="bottom" id="PWi-S9-rkI"/>
+                <constraint firstAttribute="bottom" secondItem="mOb-gi-1Rt" secondAttribute="bottom" constant="20" id="cvt-Mk-Tzo"/>
+                <constraint firstItem="Gil-AM-rcl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f8b-bO-07b"/>
+                <constraint firstItem="Gil-AM-rcl" firstAttribute="leading" secondItem="5PU-Ge-W6M" secondAttribute="trailing" constant="15" id="f8f-xe-KqK"/>
+                <constraint firstAttribute="trailing" secondItem="Gil-AM-rcl" secondAttribute="trailing" id="jo1-lX-iia"/>
+                <constraint firstItem="4By-cy-oBZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="oOr-ua-w17"/>
+                <constraint firstItem="4By-cy-oBZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="rh2-cv-ARQ"/>
+                <constraint firstAttribute="bottom" secondItem="5PU-Ge-W6M" secondAttribute="bottom" constant="20" id="zOg-j1-Xbt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Gtf-Ei-o00"/>
+                    <exclude reference="f8f-xe-KqK"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="231" y="254"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mainCellComment" width="20" height="20"/>
+        <image name="mainCellShare" width="20" height="20"/>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>
